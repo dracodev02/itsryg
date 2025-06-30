@@ -1,16 +1,67 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
+import Header from "./views/share/header";
+import Footer from "./views/share/footer";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+// Import font Monument Extended Bold
+const monumentExtendedBold = localFont({
+  src: "./fonts/MonumentExtendedBold.ttf",
+  variable: "--font-monument-extended",
+  weight: "800",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+// Import nhiều biến thể của font SF Pro Display
+const sfProDisplay = localFont({
+  src: [
+    {
+      path: "./fonts/SFPRODISPLAYBLACKITALIC.otf",
+      weight: "900",
+      style: "italic",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYBOLD.otf",
+      weight: "700",
+      style: "normal",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYHEAVYITALIC.otf",
+      weight: "800",
+      style: "italic",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYLIGHTITALIC.otf",
+      weight: "300",
+      style: "italic",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYMEDIUM.otf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYREGULAR.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYSEMIBOLDITALIC.otf",
+      weight: "600",
+      style: "italic",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYTHINITALIC.otf",
+      weight: "200",
+      style: "italic",
+    },
+    {
+      path: "./fonts/SFPRODISPLAYULTRALIGHTITALIC.otf",
+      weight: "100",
+      style: "italic",
+    },
+  ],
+  variable: "--font-sf-pro-display",
 });
 
 export const metadata: Metadata = {
@@ -26,9 +77,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${sfProDisplay.variable} ${monumentExtendedBold.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
