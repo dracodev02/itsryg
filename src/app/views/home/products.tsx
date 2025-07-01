@@ -84,7 +84,7 @@ const Products = () => {
         <span className="italic">Products</span>
       </p>
       <p className="subtitle-section">Explore applications across layers</p>
-      <div className="max-md:hidden ">
+      <div className="max-md:hidden">
         <div
           ref={containerRef}
           className="h-[442px] max-[1200px]:h-[300px] flex w-full gap-inside-section"

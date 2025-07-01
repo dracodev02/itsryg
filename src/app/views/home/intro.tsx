@@ -6,7 +6,7 @@ import Image from "next/image";
 const Intro = () => {
   return (
     <div id="home" className="section">
-      <div className="bg-black rounded-3xl relative mb-[150px] section">
+      <div className="bg-black rounded-3xl relative mb-[150px] section !pt-0">
         <Particles
           particleColors={["#ffffff", "#ffffff"]}
           particleCount={200}
@@ -80,7 +80,7 @@ const Intro = () => {
       </p>
       <p className="subtitle-section">Bringing Web3 closure to the community</p>
 
-      <div className="md:flex gap-6 gap-inside-section">
+      <div className="md:flex gap-6 gap-section">
         <div className="relative max-md:h-[230px] flex-1 rounded-3xl overflow-hidden h-[410px] inner-shadow group">
           <Waves
             lineColor="#00000030"
