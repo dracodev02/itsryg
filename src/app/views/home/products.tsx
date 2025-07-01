@@ -105,7 +105,10 @@ const Products = () => {
                   className={`h-full object-cover rounded-3xl transition-all duration-700`}
                 />
                 <div
-                  onClick={() => setActiveProduct(index)}
+                  onClick={() => {
+                    setActiveProduct(index);
+                    stopInterval();
+                  }}
                   className={`relative cursor-pointer top-0 right-0 vertical-text h-full bg-[#F3F3F3] rounded-tr-3xl rounded-br-3xl flex items-center justify-center transition-all duration-700 ${
                     activeProduct == index
                       ? "w-0"
