@@ -12,7 +12,7 @@ const Partners = () => {
       <p className="subtitle-section">
         Partners help us grow stronger, and we are bullish on Web3 mass adoption
       </p>
-      <div className="relative flex-1 rounded-3xl overflow-hidden h-[410px] max-[1200px]:h-[300px] inner-shadow gap-inside-section text-[1vw] max-md:text-[1.5vw]">
+      <div className="relative flex-1 rounded-3xl overflow-hidden h-[410px] max-[1200px]:h-[300px] inner-shadow gap-inside-section max-[1440px]:text-[1vw] max-md:text-[1.5vw] text-[15px]">
         <Waves
           lineColor="#00000030"
           waveSpeedX={0.02}
