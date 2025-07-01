@@ -4,15 +4,15 @@ import Image from "next/image";
 
 const Partners = () => {
   return (
-    <div id="partners" className="mb-[150px] pt-24">
-      <p className="text-[104px] leading-[120px]">
+    <div id="partners" className="section">
+      <p className="text-[104px] leading-[120px] title-section">
         <span className="font-extrabold">#BUIDL </span>
         <span className="italic">Partners</span>
       </p>
-      <p>
+      <p className="subtitle-section">
         Partners help us grow stronger, and we are bullish on Web3 mass adoption
       </p>
-      <div className="relative flex-1 rounded-3xl overflow-hidden h-[410px] inner-shadow mt-20">
+      <div className="relative flex-1 rounded-3xl overflow-hidden h-[410px] max-[1200px]:h-[300px] inner-shadow gap-inside-section text-[1vw] max-md:text-[1.5vw]">
         <Waves
           lineColor="#00000030"
           waveSpeedX={0.02}
@@ -32,8 +32,8 @@ const Partners = () => {
           alt="plant"
           className="absolute bottom-0 right-0"
         /> */}
-        <div className="p-8 relative z-[1] font-[10px]">
-          <div className="absolute top-[1em] left-[1em]">
+        <div className="p-8 z-[1]">
+          <div className="absolute top-[1em] left-[5em]">
             <Magnet
               padding={100}
               disabled={false}
@@ -45,11 +45,11 @@ const Partners = () => {
                 width={164}
                 height={164}
                 alt="logo-starknet"
-                className="rounded-full shadow-2xl"
+                className="rounded-full shadow-2xl aspect-square w-[9em]"
               />
             </Magnet>
           </div>
-          <div className="absolute top-[11em] left-[6em]">
+          <div className="absolute  -bottom-[4em] left-[6em]">
             <Magnet
               padding={100}
               disabled={false}
@@ -61,11 +61,11 @@ const Partners = () => {
                 width={222}
                 height={222}
                 alt="logo-sei"
-                className="rounded-full shadow-2xl"
+                className="rounded-full shadow-2xl aspect-square w-[14em]"
               />
             </Magnet>
           </div>
-          <div className="absolute top-[3em] left-[23em]">
+          <div className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2">
             <Magnet
               padding={100}
               disabled={false}
@@ -77,11 +77,11 @@ const Partners = () => {
                 width={247}
                 height={247}
                 alt="antinft"
-                className="rounded-full shadow-2xl"
+                className="rounded-full shadow-2xl aspect-square w-[16em] "
               />
             </Magnet>
           </div>
-          <div className="absolute -top-[3em] left-[40em]">
+          <div className="absolute -top-[3em] right-[10em]">
             <Magnet
               padding={100}
               disabled={false}
@@ -93,11 +93,11 @@ const Partners = () => {
                 width={214}
                 height={214}
                 alt="logo-monad"
-                className="rounded-full shadow-2xl "
+                className="rounded-full shadow-2xl  aspect-square w-[14em] "
               />
             </Magnet>
           </div>
-          <div className="absolute top-[9em] left-[48em]">
+          <div className="absolute  bottom-[1em] right-[3em]">
             <Magnet
               padding={100}
               disabled={false}
@@ -109,7 +109,7 @@ const Partners = () => {
                 width={164}
                 height={164}
                 alt="logo-unknow"
-                className="rounded-full shadow-2xl"
+                className="rounded-full shadow-2xl aspect-square w-[10em]"
               />
             </Magnet>
           </div>

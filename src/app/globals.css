@@ -25,3 +25,49 @@ body {
   writing-mode: vertical-rl;
   text-orientation: mixed;
 }
+
+@keyframes fly {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 10px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.animate-fly {
+  animation: fly 5s ease-in-out infinite;
+}
+
+.section {
+  margin-bottom: 150px;
+  padding-top: 96px;
+}
+
+.gap-inside-section {
+  margin-top: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+  .title-section {
+    font-size: 56px;
+    line-height: 56px;
+  }
+
+  .subtitle-section {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    margin-bottom: 40px;
+    padding-top: 64px;
+  }
+  .gap-inside-section {
+    margin-top: 20px;
+  } 
+}

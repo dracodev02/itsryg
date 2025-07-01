@@ -1,9 +1,16 @@
+"use client";
 import Image from "next/image";
+import { scrollToSection } from "./navigator";
 
 const Logo = () => {
   return (
-    <div className="relative w-fit overflow-visible">
-      <p className="font-montserrat font-extrabold text-4xl inline-block">
+    <div
+      onClick={() => {
+        scrollToSection("home");
+      }}
+      className="relative w-fit overflow-visible cursor-pointer"
+    >
+      <p className="font-montserrat font-extrabold text-4xl max-[1200px]:text-2xl inline-block">
         <span className="text-[#ff453a]">R</span>
         <span className="text-[#fed709]">Y</span>
         <span className="text-[#32d74b]">G</span>

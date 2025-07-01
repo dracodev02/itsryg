@@ -2,12 +2,12 @@ import ScrambledText from "@/app/reactBitsComponents/ScrambledText";
 
 const AboutUs = () => {
   return (
-    <div id="about" className="mb-[150px] pt-24">
-      <p className="text-[104px] uppercase leading-[120px]">
+    <div id="about" className="section">
+      <p className="text-[104px] uppercase leading-[120px] title-section">
         <span className="font-extrabold">About </span>
         <span className="">Us</span>
       </p>
-      <ScrambledText className="font-bold text-4xl italic !mx-0 !mb-0 max-w-full !text-foreground mt-10">
+      <ScrambledText className="font-bold text-4xl max-[1200px]:text-xl italic !mx-0 !mb-0 max-w-full !text-foreground mt-10 max-md:mt-5">
         <span className="opacity-50">We are a collective of</span>{" "}
         <span className="text-[#ff453a] ">dynamic builders</span>{" "}
         <span className="opacity-50">
@@ -16,7 +16,7 @@ const AboutUs = () => {
         </span>
       </ScrambledText>
       <br />
-      <ScrambledText className="font-bold text-4xl italic !m-0 max-w-full !text-foreground">
+      <ScrambledText className="font-bold text-4xl max-[1200px]:text-xl italic !m-0 max-w-full !text-foreground">
         <span className="opacity-50">We constantly</span>{" "}
         <span className="text-[#32d74b] ">research new insights</span>
         <span className="opacity-50">, and</span>{" "}

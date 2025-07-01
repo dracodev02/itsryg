@@ -6,7 +6,7 @@ import Products from "./views/home/products";
 
 export default function Home() {
   return (
-    <div className="max-w-[1440px] px-9 mx-auto">
+    <div className="max-w-[1440px] px-9 max-md:px-2 mx-auto">
       <Intro />
       <Products />
       <Community />

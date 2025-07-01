@@ -4,23 +4,32 @@ import Logo from "./logo";
 import { FaDiscord, FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import { scrollToSection } from "./navigator";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <div id="contact" className="max-w-[1440px] mx-auto px-9">
-      <div className="bg-white rounded-t-3xl w-full p-6 flex gap-[150px] relative pb-20">
+    <div id="contact" className="max-w-[1440px] mx-auto md:px-9">
+      <div className="bg-white rounded-t-3xl w-full p-6 flex max-md:flex-col gap-x-[150px] gap-y-4 relative pb-20">
         <Image
           src={"/images/rocket.png"}
           width={400}
           height={400}
           alt="rocket"
-          className="absolute bottom-0 right-10"
+          className="absolute bottom-0 right-10 max-md:right-0"
         />
         <div className="flex flex-col gap-6">
           <Logo />
           <div className="flex gap-3">
-            <FaXTwitter size={24} />
-            <FaDiscord className="text-[#5865F2]" size={24} />
+            <Link href={"https://x.com/RYG_Labs"} target="_blank">
+              <FaXTwitter size={24} />
+            </Link>
+            <Link
+              href={"https://discord.com/invite/AJqw2CwKZu"}
+              target="_blank"
+            >
+              <FaDiscord className="text-[#5865F2]" size={24} />
+            </Link>
+
             <div className="min-w-[1px] w-[1px] h-6 bg-foreground opacity-10" />
             <div className="w-6 h-6 grid place-items-center rounded-full bg-[#E9E9E9]">
               <LuMail size={16} />
