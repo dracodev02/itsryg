@@ -82,7 +82,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "/community1.png",
+        url: "/images/community1.jpeg",
         width: 768,
         height: 1024,
         alt: "RYG.LABS",
@@ -96,7 +96,7 @@ export const metadata: Metadata = {
       "We are a collective of dynamic builders with a strong focus on building products. We specialize in providing solutions for parties who want to step in the Web3 world with ease.",
     images: [
       {
-        url: "/community1.png",
+        url: "/images/community1.jpeg",
         width: 768,
         height: 1024,
         alt: "RYG.LABS",
