@@ -1,17 +1,15 @@
+import "./globals.css";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
 import Header from "./views/share/header";
 import Footer from "./views/share/footer";
 
-// Import font Monument Extended Bold
 const monumentExtendedBold = localFont({
   src: "./fonts/MonumentExtendedBold.ttf",
   variable: "--font-monument-extended",
   weight: "800",
 });
 
-// Import nhiều biến thể của font SF Pro Display
 const sfProDisplay = localFont({
   src: [
     {
@@ -82,7 +80,7 @@ export const metadata: Metadata = {
     type: "article",
     images: [
       {
-        url: "https://itsryg.vercel.app/images/community1.jpeg",
+        url: "https://itsryg.com/images/community1.jpeg",
         width: 768,
         height: 1024,
         alt: "RYG.LABS",
@@ -96,7 +94,7 @@ export const metadata: Metadata = {
       "We are a collective of dynamic builders with a strong focus on building products. We specialize in providing solutions for parties who want to step in the Web3 world with ease.",
     images: [
       {
-        url: "https://itsryg.vercel.app/images/community1.jpeg",
+        url: "https://itsryg.com/images/community1.jpeg",
         width: 768,
         height: 1024,
         alt: "RYG.LABS",

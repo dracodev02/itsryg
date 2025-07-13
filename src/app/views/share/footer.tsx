@@ -31,9 +31,12 @@ const Footer = () => {
             </Link>
 
             <div className="min-w-[1px] w-[1px] h-6 bg-foreground opacity-10" />
-            <div className="w-6 h-6 grid place-items-center rounded-full bg-[#E9E9E9]">
+            <Link
+              href={"mailto:Gm@itsryg.com"}
+              className="w-6 h-6 grid place-items-center rounded-full bg-[#E9E9E9]"
+            >
               <LuMail size={16} />
-            </div>
+            </Link>
           </div>
         </div>
         <div className="flex flex-col gap-6">

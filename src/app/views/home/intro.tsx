@@ -80,7 +80,7 @@ const Intro = () => {
       </p>
       <p className="subtitle-section">Bringing Web3 closure to the community</p>
 
-      <div className="md:flex gap-6 gap-section">
+      <div className="md:flex gap-6 gap-inside-section">
         <div className="relative max-md:h-[230px] flex-1 rounded-3xl overflow-hidden h-[410px] inner-shadow group">
           <Waves
             lineColor="#00000030"
